@@ -19,4 +19,10 @@ jobs:
         run: pip install .
 
       - name: Ejecutar Bot
-        run: instawebhooks "${{ secrets.colombiateinspira,foto_sintesiss_,nevadodelruiz.co,parquelosnevados,santy_phai,its.magico, }}" "${{ secrets.DISCORD_URL }}"
+        run: |
+          instawebhooks "colombiateinspira" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "foto_sintesiss_" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "nevadodelruiz.co" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "parquelosnevados" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "santy_phai" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "its.magico" "${{ secrets.DISCORD_URL }}"
