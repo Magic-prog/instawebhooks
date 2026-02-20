@@ -20,9 +20,9 @@ jobs:
 
       - name: Ejecutar Bot
         run: |
-          instawebhooks "colombiateinspira" "${{ secrets.DISCORD_URL }}"
-          instawebhooks "foto_sintesiss_" "${{ secrets.DISCORD_URL }}"
-          instawebhooks "nevadodelruiz.co" "${{ secrets.DISCORD_URL }}"
-          instawebhooks "parquelosnevados" "${{ secrets.DISCORD_URL }}"
-          instawebhooks "santy_phai" "${{ secrets.DISCORD_URL }}"
-          instawebhooks "its.magico" "${{ secrets.DISCORD_URL }}"
+          instawebhooks "colombiateinspira" "${{ secrets.DISCORD_URL }}" -p 3
+          instawebhooks "foto_sintesiss_" "${{ secrets.DISCORD_URL }}" -p 3
+          instawebhooks "nevadodelruiz.co" "${{ secrets.DISCORD_URL }}" -p 3
+          instawebhooks "parquelosnevados" "${{ secrets.DISCORD_URL }}" -p 3
+          instawebhooks "santy_phai" "${{ secrets.DISCORD_URL }}" -p 3
+          instawebhooks "its.magico" "${{ secrets.DISCORD_URL }}" -p 3
