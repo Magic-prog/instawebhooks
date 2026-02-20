@@ -1,0 +1,15 @@
+name: Ejecutar InstaWebhooks Personal
+on:
+  schedule:
+    - cron: '0 * * * *' # Se corre cada hora automáticamente
+  workflow_dispatch:      # Esto te da el botón para probarlo YA
+
+jobs:
+  run-insta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalación
+        run: pip install .
+      - name: Ejecutar Bot
+        run: instawebhooks --username "TU_USUARIO_IG" --webhook "TU_URL_DISCORD"
