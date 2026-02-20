@@ -12,4 +12,4 @@ jobs:
       - name: Instalación
         run: pip install .
       - name: Ejecutar Bot
-        run: instawebhooks --username "TU_USUARIO_IG" --webhook "TU_URL_DISCORD"
+        run: instawebhooks --username "${{ secrets.IG_USER }}" --webhook "${{ secrets.DISCORD_URL }}"
